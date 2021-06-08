@@ -13,7 +13,7 @@ sentry_sdk.init(
 
 
 def run():
-    assert sys.argv[1]%3 == 0
+    assert int(sys.argv[1])%3 == 0
     value = int(sys.argv[1]) / int(sys.argv[2])
     print(f"Value is {value}")
 
