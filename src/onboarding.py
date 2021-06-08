@@ -13,9 +13,9 @@ sentry_sdk.init(
 
 
 def run():
-    assert int(sys.argv[1])%3 == 0
-    value = int(sys.argv[1]) / int(sys.argv[2])
-    print(f"Value is {value}")
+    if len(sys.argv >= 2 and int(sys.argv[2]) != 0):
+        value = int(sys.argv[1]) / int(sys.argv[2])
+        print(f"Value is {value}")
 
 
 if __name__ == '__main__':
