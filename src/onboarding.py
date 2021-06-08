@@ -13,7 +13,7 @@ sentry_sdk.init(
 
 
 def run():
-    if len(sys.argv >= 2 and int(sys.argv[2]) != 0):
+    if len(sys.argv) >= 2 and int(sys.argv[2]) != 0:
         value = int(sys.argv[1]) / int(sys.argv[2])
         print(f"Value is {value}")
 
