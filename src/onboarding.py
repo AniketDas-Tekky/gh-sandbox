@@ -14,8 +14,8 @@ sentry_sdk.init(
 def run():
     # Comment for commit
     # New Comment
-    val = 1/0
-    print(f"{val}") 
+    val = [1,2,3]
+    print(f"{val[4]}") 
 
 
 if __name__ == '__main__':
