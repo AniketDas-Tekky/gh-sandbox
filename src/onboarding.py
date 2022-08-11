@@ -7,15 +7,16 @@ sentry_sdk.init(
     # Set traces_sample_rate to 1.0 to capture 100%
     # of transactions for performance monitoring.
     # We recommend adjusting this value in production.
-    traces_sample_rate=1.0
+    traces_sample_rate=1.0,
+    release="e6927009298695f8ebf5747eacef4b4ae4963124"
 )
 
 
 def run():
     # Comment for commit
     # New Comment
-    val = 1/0
-    print(f"{val}") 
+    val = [1,2,3]
+    print(f"{val[4]}") 
 
 
 if __name__ == '__main__':
