@@ -1,4 +1,4 @@
-
+import os
 import sys
 import sentry_sdk
 
@@ -8,7 +8,7 @@ sentry_sdk.init(
     # of transactions for performance monitoring.
     # We recommend adjusting this value in production.
     traces_sample_rate=1.0,
-    release="e6927009298695f8ebf5747eacef4b4ae4963124"
+    release=os.environ.get("COMMIT_SHA")
 )
 
 
