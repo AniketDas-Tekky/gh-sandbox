@@ -18,6 +18,7 @@ sentry_sdk.init(
 def run():
     # Comment for commit
     # New Comment
+    x = 1/0
     val = [1,2,3]
     print(f"{val[2]}") 
 
