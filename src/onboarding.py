@@ -19,7 +19,7 @@ def run():
     # Comment for commit
     # New Comment
     val = [1,2,3]
-    print(f"{val[4]}") 
+    print(f"{val[2]}") 
 
 
 if __name__ == '__main__':
